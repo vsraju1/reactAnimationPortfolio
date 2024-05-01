@@ -23,6 +23,8 @@ function App() {
       <Portfolio />
       <section id="Contact"><Contact/></section>
       <section id="footer"><Footer /></section>
+      <section id="footer"><Footer /></section>
+
     </>
   );
 }
