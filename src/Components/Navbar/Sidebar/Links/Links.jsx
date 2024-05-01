@@ -27,13 +27,22 @@ const itemVariants = {
 };
 
 
-const Links = () => {
+const Links = ({closeSideBar}) => {
   const linkItems = ["Homepage", "Services", "Portfolio", "Contact"]
 
   return (
     <motion.div className="links" variants={variants}>
       {linkItems.map(item=>(
-        <motion.a href={`#${item}`} key={item} variants={itemVariants} whileHover={{scale: 1.1}} whileTap={{scale: 0.95}}>{item}</motion.a>
+        <motion.a 
+        href={`#${item}`} 
+        key={item} 
+        variants={itemVariants} 
+        whileHover={{scale: 1.1}} 
+        whileTap={{scale: 0.95}}
+        onClick={closeSideBar}
+        >
+          {item}
+        </motion.a>
       ))}
     </motion.div>
   )

@@ -29,15 +29,46 @@
     margin: auto;
 }
 .wrapper .logo{
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: bold;
 }
 .wrapper .navItems{
     display: flex;
+    flex: 1;
+    justify-content: end;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+}
+.wrapper .navItems .nav__Icon:hover{
+    color: gray;
 }
 .wrapper .navItems .nav__Icon{
-    width: 18px;
-    height: 18px;
+    width: 28px;
+    height: 28px;
+}
+
+
+@media (max-width: 800px){
+    .wrapper{
+        width: 90%;
+    }
+    .wrapper .logo{
+        margin-left: 40vw;
+    }
+}
+
+@media (max-width: 600px){
+    .wrapper{
+        width: 95%;
+    }
+    .wrapper .logo{
+        display: none;
+    }
+    .wrapper .navItems{
+        gap: 10px;
+    }
+    .wrapper .navItems .nav__Icon{
+        width: 22px;
+        height: 22px;
+    }
 }

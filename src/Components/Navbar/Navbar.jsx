@@ -19,6 +19,11 @@ const textVariants = {
   },
 };
 
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -33,23 +38,24 @@ const Navbar = () => {
           VSR
         </motion.div>
         <div className="navItems">
-          <a href="#">
+          <a href="https://github.com/vsraju1">
             <GitHubIcon className="nav__Icon" />
           </a>
-          <a href="#">
+          <a href="www.linkedin.com/in/vs-raju">
             <LinkedInIcon className="nav__Icon" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/vs_raju7">
             <InstagramIcon className="nav__Icon" />
           </a>
-          <a href="#">
+          <a href="">
             <FacebookIcon className="nav__Icon" />
           </a>
         </div>
       </div>
       <div className="top">
         <motion.a
-          href="#Homepage"
+          // href="#Homepage"
+          onClick={() => scrollToSection('Homepage')}
           className="toparr"
           variants={textVariants}
           animate="scrollbtn"
