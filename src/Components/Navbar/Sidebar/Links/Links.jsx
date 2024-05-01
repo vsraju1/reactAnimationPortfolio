@@ -30,6 +30,14 @@ const itemVariants = {
 const Links = ({closeSideBar}) => {
   const linkItems = ["Homepage", "Services", "Portfolio", "Contact"]
 
+  const scrollToSection = (item) => {
+    const section = document.getElementById(item);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    closeSideBar(); // Close the sidebar after scrolling
+  };
+
   return (
     <motion.div className="links" variants={variants}>
       {linkItems.map(item=>(
@@ -39,7 +47,10 @@ const Links = ({closeSideBar}) => {
         variants={itemVariants} 
         whileHover={{scale: 1.1}} 
         whileTap={{scale: 0.95}}
-        onClick={closeSideBar}
+        onClick={(e) => {
+          e.preventDefault();
+          scrollToSection(item)
+        }}
         >
           {item}
         </motion.a>
