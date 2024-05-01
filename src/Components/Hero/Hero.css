@@ -1,22 +1,40 @@
 .hero{
     height: calc(100vh - 100px);
+    width: 100vw;
     overflow: hidden;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     position: relative; 
     z-index: -1;
 }
-.hero .hero__img img{
-    height: 100%;
+.hero .container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .hero .hero__img{
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 50px;
+    flex: 1;
+    width: 150px;
+    height: 400px;
 }
+
+.hero .hero__img img{
+    height: 80%;
+    width: 80%;
+    margin-left: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: pulse 5s infinite alternate;
+}
+
 .hero .hero__text{
+    flex: 1;
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,4 +76,97 @@
     position: fixed;
     z-index: 999;
     font-size: 100vw;
+}
+
+@keyframes pulse {
+    0%,50% {
+        border-top-left-radius: 48%;
+        border-top-right-radius: 40%;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 100px;
+    }
+    
+    25%,100% {
+        border-top-left-radius: 40%;
+        border-top-right-radius: 48%;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 80px;
+    }
+}
+
+@media (max-width: 1024px){
+    .hero .container{
+        width: 90%;
+    }
+    .hero .hero__img img{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 820px) {
+    .hero .container{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .hero__img{
+        margin-top: 80px;
+        width: 450px;
+        height: 500px;
+    }
+    
+    .hero .hero__img img{
+        height: 100%;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .hero .hero__text h2{
+        font-size: 5vw;
+        letter-spacing: 8px;
+    }
+    .hero .hero__text h1{
+        font-size: 7vw;
+    }
+    .hero .hero__text{
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .hero .hero__text .buttons button{
+        font-size: 3vw;
+    }
+    .hero .hero__scroll{
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .container .wrapper{
+        width: 90% !important;
+    }
+    .hero .hero__img{
+        margin-top: 50px;
+        width: 300px;
+    }
+    .hero .hero__text{
+        margin-top: 0px;
+        gap: 28px;
+    }
+    .hero .hero__text h2{
+        font-size: 8vw;
+        letter-spacing: 2px;
+    }
+    .hero .hero__text h1{
+        font-size: 10vw;
+    }
+
+    .hero .hero__text .buttons button{
+        font-size: 4vw;
+        padding: 10px;
+    }
+    .hero .hero__scroll{
+        font-size: 10vw;
+    }
 }

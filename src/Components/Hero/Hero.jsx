@@ -1,6 +1,5 @@
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import "./Hero.css";
-import profileImg from "../../assets/imgs/profile_img.png";
 import { motion } from "framer-motion";
 
 const textVariants = {
@@ -42,39 +41,41 @@ const hero__bgSliding = {
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="wrapper">
-        <motion.div
-          className="hero__text"
-          variants={textVariants}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.h2 variants={textVariants}>V Shanmukha Raju</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web developer and UI designer
-          </motion.h1>
-          <motion.div variants={textVariants} className="buttons">
-            <button variants={textVariants}>See the latest works</button>
-            <button variants={textVariants}>Contant me</button>
+      <div className="container">
+        <div className="wrapper">
+          <div>
+            <motion.div
+              className="hero__text"
+              variants={textVariants}
+              initial="initial"
+              animate="animate"
+            >
+              <motion.h2 variants={textVariants}>V Shanmukha Raju</motion.h2>
+              <motion.h1 variants={textVariants}>
+                Web developer and UI designer
+              </motion.h1>
+              <motion.div variants={textVariants} className="buttons">
+                <button variants={textVariants}>See the latest works</button>
+                <button variants={textVariants}>Contant me</button>
+              </motion.div>
+              <motion.div variants={textVariants} animate="scrollbtn">
+                <ArrowDownwardIcon className="hero__scroll" />
+              </motion.div>
+              <motion.div className="toparr"></motion.div>
+            </motion.div>
+          </div>
+          <motion.div
+            className="hero__bgSliding"
+            variants={hero__bgSliding}
+            initial="initial"
+            animate="animate"
+          >
+            Front-End React Developer
           </motion.div>
-          <motion.div variants={textVariants} animate="scrollbtn">
-            <ArrowDownwardIcon className="hero__scroll" />
-          </motion.div>
-          <motion.div className="toparr">
-            
-          </motion.div>
-        </motion.div>
-      </div>
-      <motion.div
-        className="hero__bgSliding"
-        variants={hero__bgSliding}
-        initial="initial"
-        animate="animate"
-      >
-        Front-End React Developer
-      </motion.div>
-      <div className="hero__img">
-        <img src={profileImg} alt="" />
+        </div>
+        <div className="hero__img">
+          <img src="/profile_img.png" alt="" />
+        </div>
       </div>
     </div>
   );
