@@ -54,3 +54,8 @@
 .hero .hero__scroll{
     font-size: 3vw;
 }
+.hero .top{
+    position: fixed;
+    z-index: 999;
+    font-size: 100vw;
+}

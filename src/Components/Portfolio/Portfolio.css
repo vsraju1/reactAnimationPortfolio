@@ -1,5 +1,6 @@
 .portfolio{
     position: relative;
+
 }
 .portfolio .progress{
     position: sticky;
@@ -32,7 +33,6 @@
     display: flex;
     gap: 50px;
     align-items: center;
-    margin-top: 50px;
 }
 .container .wrapper .imgContainer{
     flex: 1;
