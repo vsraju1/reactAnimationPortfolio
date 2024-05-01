@@ -1,0 +1,24 @@
+.navbar{
+   height: 100px; 
+}
+.wrapper{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.wrapper .logo{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.wrapper .navItems{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.wrapper .navItems .nav__Icon{
+    width: 18px;
+    height: 18px;
+}

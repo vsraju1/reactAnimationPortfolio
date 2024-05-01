@@ -1,0 +1,16 @@
+.footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.footerItems{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.footerItems .nav__Icon{
+    font-size: 2vw;
+}
