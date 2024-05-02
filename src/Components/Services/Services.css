@@ -1,6 +1,6 @@
 .services{
     background: linear-gradient(180deg, #0c0c1d, #111132);
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,4 +72,120 @@
     background-color: orange;
     border: none;
     cursor: pointer;
+}
+
+
+@media (max-width:820px){
+    .services .textContainer{
+        display: none;
+    }
+
+    .services .titleContainer{
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .services .titleContainer .title{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .services .titleContainer .title img{
+        width: 400px;
+    }
+    .services .titleContainer .title h1{
+        font-size: 70px;
+    }
+    .services .titleContainer .title button{
+        width: 400px;
+    }
+
+    .services .listContainer{
+        margin-top: -50px;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .services .listContainer .box{
+        gap: 20px;
+        padding: 30px;
+    }
+    .services .listContainer .box button{
+        font-size: 3vw;
+    }
+    .services .listContainer .box h2{
+        font-size: 4vw;
+    }
+    .services .listContainer .box p{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width:600px){
+    .services .titleContainer{
+        margin-top: 50px;
+    }
+    .services .titleContainer .title img{
+        width: 250px;
+        height: 75px;
+    }
+    .services .titleContainer .title h1{
+        font-size: 40px;
+    }
+    .services .titleContainer .title button{
+        width: 250px;
+        height: 75px;
+    }
+
+    .services .listContainer{
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 80%;
+        height: 100px;
+    }
+    .services .listContainer .box{
+        padding: 20px;
+        min-height: 30vh;
+    }
+    .services .listContainer .box button{
+        font-size: 5vw;
+    }
+    .services .listContainer .box h2{
+        font-size: 8vw;
+    }
+    .services .listContainer .box p{
+        font-size: 5vw;
+    }
+}
+
+@media (max-width:400px){
+    .services .titleContainer .title img{
+        width: 220px;
+        height: 70px;
+    }
+    .services .titleContainer .title h1{
+        font-size: 35px;
+    }
+    .services .titleContainer .title button{
+        width: 220px;
+        height: 70px;
+    }
+
+    .services .listContainer{
+        max-width: 90%;
+        height: 250px;
+    }
+    .services .listContainer .box{
+        min-height: 38vh;
+    }
+    .services .listContainer .box button{
+        font-size: 6vw;
+    }
+    .services .listContainer .box h2{
+        font-size: 9vw;
+    }
+    .services .listContainer .box p{
+        font-size: 5.2vw;
+    }
 }

@@ -55,8 +55,8 @@ const Hero = () => {
                 Web developer and UI designer
               </motion.h1>
               <motion.div variants={textVariants} className="buttons">
-                <button variants={textVariants}>See the latest works</button>
-                <button variants={textVariants}>Contant me</button>
+                <a href="#Portfolio" variants={textVariants}>See the latest works</a>
+                <a href="#Contact" variants={textVariants}>Contant me</a>
               </motion.div>
               <motion.div variants={textVariants} animate="scrollbtn">
                 <ArrowDownwardIcon className="hero__scroll" />

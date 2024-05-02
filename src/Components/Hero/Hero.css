@@ -48,7 +48,7 @@
 .hero .hero__text h1{
     font-size: 4.5vw;
 }
-.hero .hero__text .buttons button{
+.hero .hero__text .buttons a{
     background-color: transparent;
     padding: 18px;
     border: 1px solid white;
@@ -113,7 +113,7 @@
     }
     .hero .hero__img{
         margin-top: 80px;
-        width: 450px;
+        width: 400px;
         height: 500px;
     }
     
@@ -122,6 +122,9 @@
         width: 100%;
         margin-top: 0px;
         margin-left: 0px;
+    }
+    .container .wrapper{
+        width: 80% !important;
     }
     .hero .hero__text h2{
         font-size: 5vw;
@@ -134,7 +137,7 @@
         margin-top: 20px;
         gap: 20px;
     }
-    .hero .hero__text .buttons button{
+    .hero .hero__text .buttons a{
         font-size: 3vw;
     }
     .hero .hero__scroll{
@@ -170,3 +173,28 @@
         font-size: 10vw;
     }
 }
+
+@media (max-width: 400px) {
+    .container .wrapper{
+        width: 95% !important;
+    }
+    .hero .hero__img{
+        margin-top: 0px;
+        width: 220px;
+    }
+    .hero .hero__text{
+        margin-top: 20px;
+        gap: 18px;
+    }
+    .hero .hero__text h2{
+        font-size: 7vw;
+        letter-spacing: 2px;
+    }
+    .hero .hero__text h1{
+        font-size: 8vw;
+    }
+    .hero .hero__scroll{
+        font-size: 8vw;
+    }
+}
+
