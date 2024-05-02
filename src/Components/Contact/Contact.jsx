@@ -63,7 +63,7 @@ const Contact = () => {
             <form ref={formRef} onSubmit={sendEmail}>
                 <input type="text" placeholder='Name' name="name"/>
                 <input type="email" placeholder='Email' name="email"/>
-                <textarea rows={8} placeholder='Message' name="message"/>
+                <textarea rows={6} placeholder='Message' name="message"/>
                 <button>submit</button>
                 {error && "Error"}
                 {success && "Success"}

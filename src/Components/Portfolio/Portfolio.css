@@ -1,6 +1,6 @@
 .portfolio{
     position: relative;
-
+    
 }
 .portfolio .progress{
     position: sticky;
@@ -22,9 +22,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    
+    height: 100vh;
+    overflow: hidden; 
+    border-bottom: 1px solid lightgray;
 }
 .container .wrapper{
     width: 70%;
@@ -33,10 +33,11 @@
     display: flex;
     gap: 50px;
     align-items: center;
+    margin-top: 50px;
 }
 .container .wrapper .imgContainer{
     flex: 1;
-    height: 50%;
+    height: 40%;
 }
 
 .container img{
@@ -64,4 +65,89 @@
     padding: 10px;
     width: 200px;
     cursor: pointer;
+}
+
+@media (max-width: 820px){
+    .portfolio .progress{
+        font-size: 4vw;
+    }
+    .portfolio .progress .progressBar{
+        height: 8px;
+    }
+    
+    .container .wrapper{
+        flex-direction: column;
+        margin-top: 80px;
+        gap: 30px;
+    }
+    .container .wrapper .imgContainer{
+        height: 35%;
+    }
+    
+    .container img{
+        object-position: center;
+    }
+    .container .textContainer{
+        gap: 30px;
+    }
+    .container .textContainer h2{
+        font-size: 5vw;
+    }
+    .container .textContainer p{
+        font-size: 3vw;
+    }
+    .container .textContainer button{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 600px){
+    .portfolio .progress{
+        font-size: 5vw;
+    }
+    .portfolio .progress .progressBar{
+       margin-top: 10px;
+    }
+    .container .wrapper{ 
+        gap: 30px;
+        margin-top: 150px;
+    }
+    .container .textContainer{
+        gap: 20px;
+    }
+    .container .textContainer h2{
+        font-size: 10vw;
+    }
+    .container .textContainer p{
+        font-size: 4.5vw;
+    }
+    .container .textContainer button{
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 400px){
+    .container .wrapper{ 
+        gap: 0px;
+        align-items: center;
+    }
+    
+    .container img{
+        height: 90%;
+    }
+    
+    .container .textContainer{
+        gap: 20px;
+        flex: 1;
+
+    }
+    .container .textContainer h2{
+        font-size: 8vw;
+    }
+    .container .textContainer p{
+        font-size: 4vw;
+    }
+    .container .textContainer button{
+        font-size: 4vw;
+    }
 }

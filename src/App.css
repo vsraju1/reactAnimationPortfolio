@@ -24,9 +24,18 @@ section{
   scroll-snap-align: center;
 }
 
+
 #footer{
-  height: 100px;
+  min-height: 100px;
   width: 70%;
   margin: auto;
   border-top: 1px solid lightgray;
 }
+
+@media (max-width: 820px){
+  #footer{
+    width: 100%;
+  }
+}
+
+
