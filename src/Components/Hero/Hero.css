@@ -1,5 +1,5 @@
 .hero{
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     width: 100vw;
     overflow: hidden;
     background: linear-gradient(180deg, #0c0c1d, #111132);
@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 0;
+    margin-top: 50px;
 }
 
 .hero .hero__img{
@@ -116,11 +117,16 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        margin-top: 0px;
+
     }
     .hero .hero__img{
-        margin-top: 80px;
-        width: 400px;
-        height: 500px;
+        margin-top: 50px;
+        width: 300px;
+        height: 300px;
+
+        flex: 1;
+        margin-bottom: -50px;
     }
     
     .hero .hero__img img{
@@ -156,8 +162,9 @@
         width: 90% !important;
     }
     .hero .hero__img{
-        margin-top: 50px;
+        margin-top:50px;
         width: 300px;
+        margin-bottom: -50px;
     }
     .hero .hero__text{
         margin-top: 0px;

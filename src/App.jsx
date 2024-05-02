@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Parallax from "./Components/Parallax/Parallax";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Services from "./Components/Services/Services";
+import Skills from "./Components/Services/Skills";
 
 function App() {
   return (
