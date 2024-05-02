@@ -37,6 +37,13 @@ const hero__bgSliding = {
     },
   },
 };
+const scrollToSection = (item) => {
+  const section = document.getElementById(item);
+  
+    section.scrollIntoView({ behavior: 'smooth' });
+  
+};
+
 
 const Hero = () => {
   return (
@@ -55,11 +62,22 @@ const Hero = () => {
                 Web developer and UI designer
               </motion.h1>
               <motion.div variants={textVariants} className="buttons">
-                <a href="#Portfolio" variants={textVariants}>See the latest works</a>
-                <a href="#Contact" variants={textVariants}>Contant me</a>
+                <button  
+                variants={textVariants}
+                onClick={() => scrollToSection('Portfolio')}
+                >See the latest works</button>
+                <button 
+                variants={textVariants}
+                onClick={() => scrollToSection('Contact')}
+                >
+                  Contant me
+                </button>
+                
               </motion.div>
               <motion.div variants={textVariants} animate="scrollbtn">
-                <ArrowDownwardIcon className="hero__scroll" />
+                <ArrowDownwardIcon className="hero__scroll" 
+                onClick={() => scrollToSection('Services')}
+                />
               </motion.div>
               <motion.div className="toparr"></motion.div>
             </motion.div>

@@ -42,7 +42,7 @@
     object-fit: cover;
 }
 .services .titleContainer .title h1{
-    font-size: 96px;
+    font-size: 86px;
     font-weight: 100;
 }
 .services .titleContainer .title button{
@@ -51,8 +51,10 @@
     border-radius: 50px;
     background-color: orange;
     border: none;
-    font-size: 24px;
+    font-size: 34px;
     cursor: pointer;
+    color: white;
+    font-weight: 500;
 }
 .services .listContainer{
     flex: 2;
@@ -61,17 +63,32 @@
     margin: auto;
 }
 .services .listContainer .box{
-    padding: 50px;
+    padding: 40px;
     border: 0.5px solid gray;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex: 1;
+    height: 40vh;
+}
+.services .listContainer .box h2{
+    font-size: 30px;
+}
+.services .listContainer .box span{
+    color: blueviolet;
+    cursor: pointer;
+}
+.services .listContainer .box p{
+    font-size: 20px;
 }
 .services .listContainer .box button{
     padding: 10px;
     background-color: orange;
     border: none;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
 }
 
 
@@ -86,13 +103,13 @@
     }
     .services .titleContainer .title{
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
     }
     .services .titleContainer .title img{
         width: 400px;
     }
     .services .titleContainer .title h1{
-        font-size: 70px;
+        font-size: 60px;
     }
     .services .titleContainer .title button{
         width: 400px;
@@ -125,12 +142,15 @@
     .services .titleContainer{
         margin-top: 50px;
     }
+    .services .titleContainer .title{
+        gap: 30px;
+    }
     .services .titleContainer .title img{
         width: 250px;
         height: 75px;
     }
     .services .titleContainer .title h1{
-        font-size: 40px;
+        font-size: 32px;
     }
     .services .titleContainer .title button{
         width: 250px;
@@ -165,7 +185,7 @@
         height: 70px;
     }
     .services .titleContainer .title h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .services .titleContainer .title button{
         width: 220px;
