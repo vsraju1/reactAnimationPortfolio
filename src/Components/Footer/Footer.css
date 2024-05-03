@@ -11,6 +11,9 @@
     justify-content: flex-end;
     gap: 30px;
 }
+.footerItems a:hover{
+    color: gray;
+}
 .footerItems .nav__Icon{
     font-size: 2vw;
 }

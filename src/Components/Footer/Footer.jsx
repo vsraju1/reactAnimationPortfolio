@@ -12,13 +12,13 @@ const Footer = () => {
         <p>Get connected with me on Social Networks</p>
       </div>
       <div className="footerItems">
-        <a href="#">
+        <a href="https://github.com/vsraju1">
           <GitHubIcon className="nav__Icon" />
         </a>
-        <a href="#">
+        <a href="www.linkedin.com/in/vs-raju">
           <LinkedInIcon className="nav__Icon" />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/vs_raju7">
           <InstagramIcon className="nav__Icon" />
         </a>
         <a href="#">

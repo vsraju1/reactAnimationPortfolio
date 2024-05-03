@@ -1,5 +1,4 @@
 .cont{
-    /* min-height: 40vh; */
     text-align: center;
     margin: auto;
 }
@@ -64,9 +63,7 @@
     }
 }
 @media (max-width: 600px){
-    /* .cont{
-        min-height: 50vh;
-    } */
+   
     .cont h1{
         font-size: 8.5vw;
     }
@@ -82,9 +79,7 @@
     }
 }
 @media (max-width: 600px){
-    /* .cont{
-        min-height: 40vh;
-    } */
+    
     .cont h1{
         font-size: 8.5vw;
     }

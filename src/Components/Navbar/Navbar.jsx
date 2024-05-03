@@ -54,7 +54,6 @@ const Navbar = () => {
       </div>
       <div className="top">
         <motion.a
-          // href="#Homepage"
           onClick={() => scrollToSection('Homepage')}
           className="toparr"
           variants={textVariants}

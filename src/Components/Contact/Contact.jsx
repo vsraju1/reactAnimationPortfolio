@@ -2,7 +2,6 @@ import './Contact.css'
 import {motion} from 'framer-motion'
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-import Footer from '../Footer/Footer';
 
 
 const variants = {
