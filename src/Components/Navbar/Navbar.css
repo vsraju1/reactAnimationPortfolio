@@ -58,6 +58,11 @@
 }
 
 @media (max-width: 600px){
+    .navbar{
+        height: 100px;
+        position: relative;
+        padding-right: 25px; 
+     }
     .wrapper{
         width: 95%;
     }

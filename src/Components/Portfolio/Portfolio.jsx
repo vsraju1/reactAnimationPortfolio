@@ -7,28 +7,18 @@ import {motion, useScroll, useSpring, useTransform} from 'framer-motion'
 const Projects = [
     {
         id: 1,
-        title: "React Commerce",
-        img: "https://images.pexels.com/photos/20259377/pexels-photo-20259377/free-photo-of-a-small-wooden-house-on-a-pier-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates doloribus assumenda tempore fugiat libero cupiditate rerum soluta aspernatur sed enim?"
+        title: "VPFW",
+        img: "/vpfw.png",
+        desc: "Built using html, css and a little javascript only. This site has created for a company which proivdes fabrication services. This project was done during my initial days of learnig web development.",
+        url: "https://vsraju1.github.io/VPFW/"
     },
     {
         id: 2,
-        title: "Html and CSS only",
-        img: "https://images.pexels.com/photos/20485059/pexels-photo-20485059/free-photo-of-a-person-riding-a-dirt-bike-on-the-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates doloribus assumenda tempore fugiat libero cupiditate rerum soluta aspernatur sed enim?"
-    },
-    {
-        id: 3,
-        title: "Vannila JS",
-        img: "https://images.pexels.com/photos/21974391/pexels-photo-21974391/free-photo-of-product-photography.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates doloribus assumenda tempore fugiat libero cupiditate rerum soluta aspernatur sed enim?"
-    },
-    {
-        id: 4,
-        title: "Netflix Clone",
-        img: "https://images.pexels.com/photos/20370117/pexels-photo-20370117/free-photo-of-nazare.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates doloribus assumenda tempore fugiat libero cupiditate rerum soluta aspernatur sed enim?"
-    },
+        title: "LinkedIn Clone",
+        img: "/linkedin.png",
+        desc: "This project is totally focused on learnig and creating components in React to implement dynamic user interface. Redux was used to manage states. Though this project is not fully resposnvie.",
+        url: "https://linkedin-clone-388b1.web.app/"
+    }
 ]
 
 const Single = ({item}) => {
@@ -51,7 +41,8 @@ const Single = ({item}) => {
                 <div className="textContainer" >
                     <h2>{item.title}</h2>
                     <p>{item.desc}</p>
-                    <button>See demo</button>
+                    <button><a href={item.url}>See demo</a>
+                        </button>
                 </div>
                 </div>
             </div>

@@ -78,6 +78,7 @@
 .hero .hero__scroll{
     font-size: 3vw;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 .hero .top{
     position: fixed;
@@ -158,16 +159,25 @@
 }
 
 @media (max-width: 600px) {
+    .hero{
+        width: 100vw;
+        overflow: hidden;
+        background: linear-gradient(180deg, #0c0c1d, #111132);
+        position: relative; 
+        z-index: 99;
+     
+        height: -webkit-fill-available;
+    }
     .container .wrapper{
         width: 90% !important;
     }
     .hero .hero__img{
-        margin-top:50px;
+        margin-top:0px;
         width: 300px;
         margin-bottom: -50px;
     }
     .hero .hero__text{
-        margin-top: 0px;
+        margin-top: -50px;
         gap: 28px;
     }
     .hero .hero__text h2{

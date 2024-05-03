@@ -1,6 +1,6 @@
 html{
-  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 *{
   padding: 0;
@@ -10,6 +10,7 @@ html{
 }
 
 body{
+  height: -webkit-fill-available;
   background-color: #0c0c1d;
   color: lightgray;
 }
@@ -19,7 +20,7 @@ a {
   color: inherit;
 }
 section{
-  min-height: 100vh;
+  min-height: -webkit-fill-available;
   scroll-snap-align: center;
 }
 

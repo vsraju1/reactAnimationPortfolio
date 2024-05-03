@@ -27,14 +27,14 @@ const scrollToSection = (item) => {
 const Services = () => {
   const ref = useRef();
 
-  const isInview = useInView(ref, { margin: "-200px" });
+  // const isInview = useInView(ref, { margin: "-200px" });
 
   return (
     <motion.div
       className="services"
       variants={variants}
       initial="initial"
-      animate={isInview && "animate"}
+      animate="animate"
       ref={ref}
     >
       <motion.div className="textContainer" variants={variants}>
