@@ -34,7 +34,6 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      //whileInView="animate"
       animate={isInview && "animate"}
       ref={ref}
     >
